@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/tvLiveData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/hello_world"
+            app:layout_constraintBottom_toTopOf="@+id/btnLiveData"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <Button
+            android:id="@+id/btnLiveData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="LiveData"
+            app:layout_constraintBottom_toTopOf="@+id/tvStateFlow"
+            app:layout_constraintEnd_toEndOf="@+id/tvLiveData"
+            app:layout_constraintStart_toStartOf="@+id/tvLiveData"
+            app:layout_constraintTop_toBottomOf="@+id/tvLiveData" />
+
+        <TextView
+            android:id="@+id/tvStateFlow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/hello_world"
+            app:layout_constraintBottom_toTopOf="@+id/btnStateFlow"
+            app:layout_constraintEnd_toEndOf="@+id/btnLiveData"
+            app:layout_constraintStart_toStartOf="@+id/btnLiveData"
+            app:layout_constraintTop_toBottomOf="@+id/btnLiveData" />
+
+        <Button
+            android:id="@+id/btnStateFlow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="StateFlow"
+            app:layout_constraintBottom_toTopOf="@+id/tvFlow"
+            app:layout_constraintEnd_toEndOf="@+id/tvStateFlow"
+            app:layout_constraintStart_toStartOf="@+id/tvStateFlow"
+            app:layout_constraintTop_toBottomOf="@+id/tvStateFlow" />
+
+        <Button
+            android:id="@+id/btnFlow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Flow"
+            app:layout_constraintBottom_toTopOf="@+id/tvSharedFlow"
+            app:layout_constraintEnd_toEndOf="@+id/tvFlow"
+            app:layout_constraintStart_toStartOf="@+id/tvFlow"
+            app:layout_constraintTop_toBottomOf="@+id/tvFlow" />
+
+        <TextView
+            android:id="@+id/tvFlow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/hello_world"
+            app:layout_constraintBottom_toTopOf="@+id/btnFlow"
+            app:layout_constraintEnd_toEndOf="@+id/btnStateFlow"
+            app:layout_constraintStart_toStartOf="@+id/btnStateFlow"
+            app:layout_constraintTop_toBottomOf="@+id/btnStateFlow" />
+
+        <TextView
+            android:id="@+id/tvSharedFlow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/hello_world"
+            app:layout_constraintBottom_toTopOf="@+id/btnSharedFlow"
+            app:layout_constraintEnd_toEndOf="@+id/btnFlow"
+            app:layout_constraintStart_toStartOf="@+id/btnFlow"
+            app:layout_constraintTop_toBottomOf="@+id/btnFlow" />
+
+        <Button
+            android:id="@+id/btnSharedFlow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="SharedFlow"
+            app:layout_constraintEnd_toEndOf="@+id/tvSharedFlow"
+            app:layout_constraintStart_toStartOf="@+id/tvSharedFlow"
+            app:layout_constraintTop_toBottomOf="@+id/tvSharedFlow" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
